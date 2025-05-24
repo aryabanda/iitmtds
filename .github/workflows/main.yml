@@ -1,19 +1,13 @@
-name: Workflow with Email Identifier
+name: Example Workflow
 
 on:
-  # Runs when manually triggered
-  workflow_dispatch:
-  # Also runs on push to main branch
   push:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
-  hello-world:
+  test:
     runs-on: ubuntu-latest
-    
     steps:
       - name: 23f2001196@ds.study.iitm.ac.in
         run: echo "Hello, world!"
-        
-      - name: Arya
-        run: date
